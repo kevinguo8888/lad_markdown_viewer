@@ -1,6 +1,6 @@
 # 安全政策
 
-[⏰ 时间：2025-06-21 19:47]
+[⏰ 时间：2025-06-21 19:48]
 
 ## 支持的版本
 
@@ -18,7 +18,7 @@
 
 ### 报告方式
 
-1. **电子邮件**: [security@lad-markdown-viewer.org]
+1. **电子邮件**: [kositguo@gmail.com]
 2. **GitHub Security**: 使用GitHub的安全公告功能
 3. **私密Issue**: 创建私密的安全相关Issue
 
@@ -71,10 +71,10 @@
 
 ## 联系方式
 
-- **安全团队**: [security@lad-markdown-viewer.org]
-- **一般支持**: [support@lad-markdown-viewer.org]
-- **项目维护者**: [maintainers@lad-markdown-viewer.org]
+- **安全团队**: [kositguo@gmail.com]
+- **一般支持**: [kositguo@gmail.com]
+- **项目维护者**: [kositguo@gmail.com]
 
 ---
 
-**最后更新**：2025-06-21 19:47 
+**最后更新**：2025-06-21 19:48 

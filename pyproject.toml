@@ -9,10 +9,10 @@ description = "一个功能强大的Markdown查看器，支持Web和桌面应用
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "LAD Markdown Viewer Contributors", email = "support@lad-markdown-viewer.org"}
+    {name = "LAD Markdown Viewer Contributors", email = "kositguo@gmail.com"}
 ]
 maintainers = [
-    {name = "LAD Markdown Viewer Contributors", email = "support@lad-markdown-viewer.org"}
+    {name = "LAD Markdown Viewer Contributors", email = "kositguo@gmail.com"}
 ]
 keywords = ["markdown", "viewer", "renderer", "html", "desktop", "web", "gui", "qt", "flask", "mermaid", "yaml", "toc"]
 classifiers = [

@@ -1,6 +1,6 @@
 # 支持指南
 
-[⏰ 时间：2025-06-21 19:47]
+[⏰ 时间：2025-06-21 19:48]
 
 ## 获取帮助
 
@@ -37,9 +37,9 @@
 
 对于私密问题或商业支持：
 
-- **一般支持**: [support@lad-markdown-viewer.org]
-- **技术问题**: [tech@lad-markdown-viewer.org]
-- **商业咨询**: [business@lad-markdown-viewer.org]
+- **一般支持**: [kositguo@gmail.com]
+- **技术问题**: [kositguo@gmail.com]
+- **商业咨询**: [kositguo@gmail.com]
 
 ### 4. 社区讨论
 
@@ -151,8 +151,8 @@ A: 核心功能使用MIT许可证，可以商业使用。桌面应用使用GPL v
 - 培训和技术咨询
 - SLA保证
 
-请联系 [business@lad-markdown-viewer.org] 了解更多信息。
+请联系 [kositguo@gmail.com] 了解更多信息。
 
 ---
 
-**最后更新**：2025-06-21 19:47 
+**最后更新**：2025-06-21 19:48 
