@@ -1,0 +1,10 @@
+# LAD Markdown Viewer 桌面应用依赖 (GPL v3)
+# 最后更新：2025-06-21 19:47
+# 注意：此模块使用GPL v3许可证，由于PyQt5的传染性要求
+
+# 桌面GUI框架 (GPL v3)
+PyQt5>=5.15.0
+PyQtWebEngine>=5.15.0
+
+# 包含核心依赖
+-r requirements-core.txt 

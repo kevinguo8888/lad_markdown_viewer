@@ -1,0 +1,20 @@
+# LAD Markdown Viewer 核心依赖 (MIT兼容)
+# 最后更新：2025-06-21 19:47
+
+# 核心依赖
+mistune>=2.0.0
+
+# Web应用依赖
+flask>=2.0.0
+flask-cors>=3.0.0
+
+# 数据处理
+pyyaml>=5.4.0
+
+# 开发依赖（可选）
+pytest>=6.0.0
+pytest-cov>=2.10.0
+pytest-html>=3.0.0
+black>=21.0.0
+flake8>=3.8.0
+mypy>=0.800 

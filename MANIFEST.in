@@ -1,0 +1,42 @@
+# LAD Markdown Viewer - MANIFEST.in
+# 最后更新：2025-06-21 19:47
+
+# 包含所有Python源文件
+include *.py
+recursive-include lad_markdown_viewer *.py
+
+# 包含文档文件
+include *.md
+include *.txt
+recursive-include lad_markdown_viewer *.md
+recursive-include lad_markdown_viewer *.txt
+
+# 包含许可证文件
+include LICENSE
+include lad_markdown_viewer/LICENSE
+
+# 包含示例文件
+include example.md
+include output.html
+include lad_markdown_viewer/example.md
+include lad_markdown_viewer/output.html
+
+# 包含配置文件
+include requirements*.txt
+include setup.py
+include lad_markdown_viewer/setup.py
+
+# 包含项目文档
+include README*.md
+include 项目完整性检查报告.md
+include 版权和许可证分析报告.md
+
+# 排除不需要的文件
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__
+global-exclude .git*
+global-exclude .DS_Store
+global-exclude *.swp
+global-exclude *.swo
+global-exclude *~ 

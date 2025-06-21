@@ -1,0 +1,29 @@
+# LAD Markdown Viewer 依赖包
+# 最后更新：2025-06-21 19:47
+# 
+# 许可证说明：
+# - 核心功能 (requirements-core.txt): MIT许可证兼容
+# - 桌面应用 (requirements-desktop.txt): GPL v3许可证
+# 
+# 推荐安装方式：
+# - 仅核心功能: pip install -r requirements-core.txt
+# - 包含桌面应用: pip install -r requirements-desktop.txt
+
+# 核心依赖 (MIT兼容)
+mistune>=2.0.0
+flask>=2.0.0
+flask-cors>=3.0.0
+pyyaml>=5.4.0
+
+# 桌面应用依赖 (GPL v3) - 可选
+# 注意：安装PyQt5将使桌面应用模块受GPL v3许可证约束
+PyQt5>=5.15.0
+PyQtWebEngine>=5.15.0
+
+# 开发依赖（可选）
+pytest>=6.0.0
+pytest-cov>=2.10.0
+pytest-html>=3.0.0
+black>=21.0.0
+flake8>=3.8.0
+mypy>=0.800 
