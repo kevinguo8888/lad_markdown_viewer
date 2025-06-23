@@ -115,9 +115,16 @@ def check_package():
     
     # 尝试安装测试
     print("🧪 测试安装...")
-    success, _ = run_command('pip install --dry-run dist/*.whl')
-    if not success:
-        print("❌ 包安装测试失败")
+    # 找到wheel文件
+    wheel_files = [f for f in dist_files if f.endswith('.whl')]
+    if wheel_files:
+        wheel_path = os.path.join('dist', wheel_files[0])
+        success, _ = run_command(f'pip install --dry-run "{wheel_path}"')
+        if not success:
+            print("❌ 包安装测试失败")
+            return False
+    else:
+        print("❌ 未找到wheel文件")
         return False
     
     print("✅ 包检查通过")
