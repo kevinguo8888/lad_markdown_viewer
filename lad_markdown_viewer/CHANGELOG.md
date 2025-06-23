@@ -9,6 +9,15 @@
 - 消除重复代码，代码行数减少25%（从224行减少到168行）
 - 统一使用 `lad_markdown_viewer.markdown_processor.render_markdown_to_html`
 
+### 核心模块优化
+- **重构 `markdown_processor.py`**：
+  - 将 `slugify` 函数移动到 `markdown_utils.py` 实现代码复用
+  - 优化导入结构，使用相对导入 `from .markdown_utils import slugify`
+  - 提高代码模块化程度，消除重复定义
+- **改进 `markdown_utils.py`**：
+  - 集中管理所有工具函数
+  - 统一 `slugify` 函数实现，支持中文标题锚点生成
+
 ### 改进
 - 优化预览工具的用户体验和帮助信息
 - 修复Windows控制台编码问题
@@ -18,7 +27,7 @@
 ### 架构优化
 - 完全消除代码重复，提高维护性
 - 统一的功能特性支持（YAML表格、TOC跳转、Mermaid等）
-- 更好的模块化设计
+- 更好的模块化设计和函数复用
 
 ## [1.2.0] - 2025-06-21
 
