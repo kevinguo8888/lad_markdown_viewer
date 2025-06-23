@@ -61,9 +61,14 @@ setup(
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
     python_requires=">=3.7",
-    install_requires=read_requirements('requirements-core.txt'),
+    install_requires=[
+        'mistune>=2.0.0',
+        'pyyaml>=5.4.0',
+    ],
     extras_require={
-        'desktop': read_requirements('requirements-desktop.txt'),
+        'desktop': [
+            'PyQt5>=5.15.0',
+        ],
         'web': [
             'flask>=2.0.0',
             'flask-cors>=3.0.0',
