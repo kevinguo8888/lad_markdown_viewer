@@ -1,5 +1,15 @@
 import re
 
+def slugify(text):
+    """根据文档中TOC链接的格式，为标题生成匹配的ID。"""
+    parts = text.split(' ', 1)
+    if len(parts) == 2:
+        num_part, text_part = parts
+        num_part = num_part.replace('.', '')
+        return f"{num_part}-{text_part}"
+    else:
+        return text
+
 def extract_mermaid_blocks(md_text):
     mermaid_blocks = []
     def replacer(match):

@@ -12,17 +12,16 @@ Mermaid图表支持等功能。
 版本: 1.2.0
 """
 
-__version__ = "1.2.0"
+__version__ = "1.3.0"
 __author__ = "LAD Markdown Viewer Contributors"
 __license__ = "MIT"
 __description__ = "A powerful Markdown viewer with YAML front-matter and Mermaid support"
 
 # 核心功能模块
-from .markdown_processor import MarkdownProcessor, render_markdown_to_html
+from .markdown_processor import render_markdown_to_html
 from .markdown_utils import extract_mermaid_blocks, restore_mermaid_blocks, slugify
 
 __all__ = [
-    'MarkdownProcessor',
     'render_markdown_to_html',
     'extract_mermaid_blocks',
     'restore_mermaid_blocks',

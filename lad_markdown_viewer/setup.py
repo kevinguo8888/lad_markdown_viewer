@@ -11,7 +11,7 @@ LAD Markdown Viewer Setup
 注意: 桌面应用模块使用GPL v3许可证（由于PyQt5依赖）
 
 作者: LAD Markdown Viewer Contributors
-版本: 1.2.0
+版本: 1.3.0
 """
 
 from setuptools import setup, find_packages
@@ -35,7 +35,7 @@ def read_requirements(filename):
 
 setup(
     name="lad-markdown-viewer",
-    version="1.2.0",
+    version="1.3.0",
     author="LAD Markdown Viewer Contributors",
     author_email="kositguo@gmail.com",
     description="一个功能强大的Markdown查看器，支持Web和桌面应用",
