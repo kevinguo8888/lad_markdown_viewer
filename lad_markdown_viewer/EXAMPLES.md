@@ -446,6 +446,73 @@ def render_markdown(request):
     return JsonResponse({'error': 'Invalid request method'})
 ```
 
+## 1. 基础用法
+
+```python
+from lad_markdown_viewer.markdown_processor import render_markdown_with_zoom
+md_text = """
+# 示例文档
+
+![图片](https://example.com/image.png)
+
+```mermaid
+graph TD;
+  A-->B;
+  B-->C;
+```
+"""
+html_body = render_markdown_with_zoom(md_text)
+# 将 html_body 嵌入你的页面模板即可
+```
+
+## 2. Flask 集成示例
+
+```python
+from flask import Flask, request, Response
+from lad_markdown_viewer.markdown_processor import render_markdown_with_zoom
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    md_path = request.args.get('md', 'README.md')
+    with open(md_path, 'r', encoding='utf-8') as f:
+        md_text = f.read()
+    html_body = render_markdown_with_zoom(md_text)
+    html = f"""
+    <html><head>...</head><body><div class='markdown-body'>{html_body}</div></body></html>
+    """
+    return Response(html, mimetype='text/html')
+```
+
+## 3. a 标签回调与外部链接处理
+
+```js
+// 页面JS中注册回调
+window.onMarkdownLinkClick = function(href) {
+    alert('用户点击了外部链接: ' + href);
+    // 可自定义跳转、弹窗、预览等
+};
+```
+
+## 4. 自定义样式
+
+```css
+/* 覆盖放大层样式 */
+.zoom-overlay { background: rgba(30,30,30,0.85); }
+.zoom-controls .zoom-btn { color: #1976d2; }
+```
+
+## 5. 常见问题场景
+
+- 多图/多流程图独立放大缩放
+- 拖拽平移后内容停留，点击空白处关闭
+- 兼容所有主流浏览器和WebView
+
+---
+
+更多高级用法和集成示例，详见 README.md 和 TESTING.md。
+
 ---
 
 **最后更新**：2025-06-21 19:47 

@@ -1,0 +1,35 @@
+{
+  "project": "LAD贷顾问平台",
+  "version": "2.0",
+  "environment": "windows-powershell",
+  "command_separator": ";",
+  "forbidden_operators": [
+    "&&",
+    "||"
+  ],
+  "preferred_syntax": "powershell",
+  "validation_rules": [
+    "no-bash-operators",
+    "powershell-compatible",
+    "semicolon-separator"
+  ],
+  "ai_behavior_rules": {
+    "命令输出规则": "始终使用分号(;)作为命令分隔符",
+    "条件执行规则": "使用if语句和$LASTEXITCODE检查",
+    "语法兼容性": "确保所有命令与PowerShell 5.1+兼容",
+    "错误处理": "使用PowerShell原生错误处理机制",
+    "时间戳规范": {
+      "强制要求": "每次回复必须以实时时间戳开头：[⏰ 时间：YYYY-MM-DD HH:mm]",
+      "获取方式": "必须执行Get-Date -Format \"yyyy-MM-dd HH:mm\"命令获取实时时间",
+      "禁止行为": "严禁使用文档中的历史日期作为当前时间戳",
+      "验证机制": "AI必须在每次交互时验证时间戳的实时性"
+    },
+    "文档更新规则": {
+      "日期同步": "更新文档时必须使用当前实际日期",
+      "版本管理": "文档版本号和更新时间必须保持一致",
+      "历史清理": "发现错误历史日期时必须立即修正"
+    }
+  },
+  "created_time": "2025-06-23 19:32",
+  "last_updated": "2025-06-24 11:21"
+}

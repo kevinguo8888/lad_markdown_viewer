@@ -146,3 +146,58 @@ python -m pytest tests/
 
 **最后更新**：2025-06-23 10:42
 **版本**：v1.3.0
+
+## 组件简介
+
+`lad_markdown_viewer` 是一款支持 Markdown 图片和 Mermaid 流程图放大、缩小、拖拽、重置等交互的高兼容性渲染组件，适用于 Flask/Web/Python 等多种环境，具备 GitHub 风格的美观排版和健壮的事件/样式隔离能力。
+
+## 主要特性
+- Markdown 图片、Mermaid 流程图一键放大、缩小、拖拽、重置
+- 放大层全局唯一，支持多图/多图表独立操作
+- 事件与样式作用域隔离，外部容器和全局 CSS/JS 不影响交互
+- GitHub 风格渲染，兼容表格、代码块、流程图等
+- a 标签拦截与外部链接回调，支持 md 文件内部跳转和外部链接自定义处理
+- 易于集成，支持 Flask/Web/Python 环境
+
+## 安装与依赖
+- Python >= 3.7
+- 依赖：mistune、mermaid.js（前端CDN）、github-markdown-css（前端CDN）
+- 安装：
+```bash
+pip install mistune
+# 前端页面需引入 mermaid.js 和 github-markdown-css
+```
+
+## 快速使用
+```python
+from lad_markdown_viewer.markdown_processor import render_markdown_with_zoom
+html_body = render_markdown_with_zoom(md_text)
+# 将 html_body 嵌入你的页面模板即可
+```
+
+## API说明
+- `render_markdown_with_zoom(md_text: str) -> str`
+  - 输入：Markdown 文本
+  - 输出：带放大缩放交互的 HTML 片段
+
+## 常见问题
+- Q: 为什么放大层不会被外部样式影响？
+  A: 组件内部采用独立 class 命名和事件绑定，最大限度隔离外部影响。
+- Q: 如何自定义放大层样式？
+  A: 可在前端页面自定义 .zoom-overlay、.zoom-controls 等 class。
+- Q: 支持哪些浏览器？
+  A: 兼容所有现代主流浏览器（Chrome/Edge/Firefox/Safari/Opera等）。
+
+## 兼容性说明
+- 推荐使用现代浏览器或基于 Chromium 的桌面/移动 WebView。
+- 未来版本将支持 Shadow DOM 隔离、多端适配（详见 UPGRADE_PLAN.md）。
+
+## 未来升级计划
+- Shadow DOM 版组件，进一步提升隔离性
+- 桌面端/移动端适配与兼容性检测
+- iframe 沙箱与 CSP 安全增强
+- 详见 UPGRADE_PLAN.md
+
+## 版权与第三方依赖
+- 本组件基于 MIT 协议开源
+- 依赖 mermaid.js、github-markdown-css 等第三方库，详见 LICENSE/NOTICE

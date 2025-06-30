@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 LAD Markdown Viewer Contributors
+Copyright (c) 2025 LAD Project
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -18,4 +18,18 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. 
+SOFTWARE.
+
+---
+
+## 第三方依赖与版权说明
+
+- mermaid.js (https://github.com/mermaid-js/mermaid)
+  - License: MIT
+- github-markdown-css (https://github.com/sindresorhus/github-markdown-css)
+  - License: MIT
+- mistune (https://github.com/lepture/mistune)
+  - License: BSD-3-Clause
+
+本项目仅引用上述第三方库的公开发行版，遵循其开源协议。
+如需商用请自行查阅各依赖的最新协议条款。 
